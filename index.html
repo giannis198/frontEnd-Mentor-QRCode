@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+      body {
+        font-family: "Outfit", sans-serif;
+      }
+
+      img {
+        border-radius: 0.5em;
+        width: 100%;
+      }
+
+      .container {
+        height: 100dvh;
+        background-color: hsl(212, 45%, 89%);
+        max-width: 1440px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card {
+        text-align: center;
+        border-radius: 1rem;
+        display: grid;
+        gap: 1em;
+        padding: 1.5em 1em;
+        /* margin: auto; */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: hsl(0, 0%, 100%);
+        width: 30%;
+        padding-bottom: 1em;
+      }
+
+      .card__title {
+        font-weight: 700;
+        font-size: 1.5em;
+        color: hsl(218, 44%, 22%);
+      }
+
+      .card__description {
+        font-weight: 400;
+        font-size: 1em;
+        color: hsl(220, 15%, 55%);
+      }
+
+      @media (max-width: 375px) {
+        .card {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card__img">
+          <img src="images/image-qr-code.png" alt="qr-code" />
+        </div>
+        <h1 class="card__title">
+          Improve your front-end skills by building projects
+        </h1>
+        <p class="card__description">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
